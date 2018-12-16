@@ -12,6 +12,7 @@
 		9C597D9B21C6A70D00F25141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C597D9921C6A70D00F25141 /* Main.storyboard */; };
 		9C597D9D21C6A71A00F25141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C597D9C21C6A71A00F25141 /* Assets.xcassets */; };
 		9C597DA021C6A71A00F25141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C597D9E21C6A71A00F25141 /* LaunchScreen.storyboard */; };
+		9C597DA921C6A76000F25141 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C597DA821C6A76000F25141 /* String+Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9C597D9C21C6A71A00F25141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C597D9F21C6A71A00F25141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C597DA121C6A71A00F25141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C597DA821C6A76000F25141 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		9C597D9421C6A70D00F25141 /* UniqueIdentifier */ = {
 			isa = PBXGroup;
 			children = (
+				9C597DA721C6A73900F25141 /* Extension */,
 				9C597D9521C6A70D00F25141 /* AppDelegate.swift */,
 				9C597D9721C6A70D00F25141 /* ViewController.swift */,
 				9C597D9921C6A70D00F25141 /* Main.storyboard */,
@@ -62,6 +65,14 @@
 				9C597DA121C6A71A00F25141 /* Info.plist */,
 			);
 			path = UniqueIdentifier;
+			sourceTree = "<group>";
+		};
+		9C597DA721C6A73900F25141 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9C597DA821C6A76000F25141 /* String+Utils.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				9C597D9821C6A70D00F25141 /* ViewController.swift in Sources */,
 				9C597D9621C6A70D00F25141 /* AppDelegate.swift in Sources */,
+				9C597DA921C6A76000F25141 /* String+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
