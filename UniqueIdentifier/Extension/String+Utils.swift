@@ -12,10 +12,30 @@ extension String {
     
     // MARK: - Unique Identifier
     func uniqueId(id: Int) -> String {
+        // user id
+        let userId = String(format: "%X", id)
         
-        var uniqueId = String()
+        // currente date
+        let date = Date()
+        let calendar = Calendar.current
+        let components : DateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+
+        let year : String = String(format: "%X", components.year!)
+        let month : String = String(format: "%X", components.month!)
+        let day : String = String(format: "%X", components.day!)
         
-        uniqueId = "BRT-099912-\(id)"
+        let hour : String = String(format: "%X", components.hour!)
+        let minute : String = String(format: "%X", components.minute!)
+        let second : String = String(format: "%X", components.second!)
+
+        var uniqueId = "\(userId)-"
+        uniqueId.append("\(year)-")
+        uniqueId.append("\(month)-")
+        uniqueId.append("\(day)-")
+        uniqueId.append("\(hour)-")
+        uniqueId.append("\(minute)-")
+        uniqueId.append("\(second)")
+        
         
         return uniqueId
     }
