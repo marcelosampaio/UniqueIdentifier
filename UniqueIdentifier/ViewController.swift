@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let fileName = String()
-        print("File name: \(fileName.uniqueId(id: 312))")
+        print("File name: \(fileName.uniqueId(id: 312909333221))")
         
         
         

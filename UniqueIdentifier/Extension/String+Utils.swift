@@ -18,7 +18,7 @@ extension String {
         // currente date
         let date = Date()
         let calendar = Calendar.current
-        let components : DateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+        let components : DateComponents = calendar.dateComponents([.year, .month, .day, .hour, .minute, .second, .nanosecond], from: date)
 
         let year : String = String(format: "%X", components.year!)
         let month : String = String(format: "%X", components.month!)
@@ -27,6 +27,7 @@ extension String {
         let hour : String = String(format: "%X", components.hour!)
         let minute : String = String(format: "%X", components.minute!)
         let second : String = String(format: "%X", components.second!)
+        let nanoSecond : String = String(format: "%X", components.nanosecond!)
 
         var uniqueId = "\(userId)-"
         uniqueId.append("\(year)-")
@@ -34,8 +35,8 @@ extension String {
         uniqueId.append("\(day)-")
         uniqueId.append("\(hour)-")
         uniqueId.append("\(minute)-")
-        uniqueId.append("\(second)")
-        
+        uniqueId.append("\(second)-")
+        uniqueId.append("\(nanoSecond)")
         
         return uniqueId
     }
